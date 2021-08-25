@@ -14,42 +14,87 @@
 
 <body>
    <header id="header">
-      <div class="header__img--logo" >
+      <div class="header__img--logo">
          <img src="./images/yamaha_logo.svg" alt="logo" id="header-img">
       </div>
-      
+
       <nav class="header__navbar" id="nav-bar">
          <ul>
             <li class="nav-link"><a href="#Features">Features</a></li>
             <li class="nav-link"><a href="#Yamaha">Yamaha music</a></li>
-            <li class="nav-link"><a href="#Prices">Prices</a></li>
+            <li class="nav-link"><a href="#Pricing">Pricing</a></li>
          </ul>
       </nav>
    </header>
+   <section class="form--mail">
+      <h2 class="form--title">Yamaha Make waves </h2>
+      <form action="https://www.freecodecamp.com/email-submit" id="form">
+         <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+         <input class="btn" id="submit" type="submit" value="Get started">
+      </form>
+   </section>
    <main>
-      <section class="main__form--mail">
-         <form action="https://www.freecodecamp.com/email-submit" id="form">
-            <label>Yamaha Make waves </label>
-            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
-            <input id="submit" type="submit" value="Get started">
-         </form>
-      </section>
-
       <section id="Features">
-         <h2>Features</h2>
-         <ul>
-            <li>asdas</li>
-            <li>asdsad</li>
-            <li>asdasd</li>
+         <ul class="features__container">
+            <li class="features__container--items">
+               <h2>Our Spirit</h2>
+               <p>The connection you have with your guitar is unique. But like your music, itʼs always developing,
+                  always changing. Your music, your playing, your creativity donʼt stay the same, they donʼt rest in the
+                  same spot for decades ‒ so why would we?</p>
+            </li>
+            <li class="features__container--items">
+               <h2>We Are Never Standing Still</h2>
+               <p>
+                  We've been making guitars since 1966, but that doesn't make us stuck in our ways. Whether its a
+                  completely new way of building a guitar, or just a new switch tip, innovation is what makes for a
+                  Yamaha guitar.</p>
+            </li>
+            <li class="features__container--items">
+               <h2>Keep Listening</h2>
+               <p>We're driven by our players. Our network of artists, students, and industry experts keep us aligned
+                  with the way guitarists are really making and consuming music. Striving for the best experience for
+                  Yamaha players, new and old, is what keeps us moving.</p>
+            </li>
          </ul>
       </section>
 
       <section id="Yamaha">
-
+         <iframe id="video" width="640" height="360" src="https://www.youtube.com/embed/wYtbPD-WixY"
+            title="YouTube video player Yamaha" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+         </iframe>
       </section>
 
-      <section id="Prices">
-
+      <section id="Pricing">
+         <div class="pricing__boxes">
+            <div class="pricing__boxes--title">Acoustic Guitars</div>
+            <h2>$733</h2>
+            <ol>
+               <li>Concert Body</li>
+               <li>Solid Spruce Top with Mahogany Back and Sides</li>
+               <li>Top Color: Off-White; Interior Color: Light Blue</li>
+            </ol>
+         </div>
+         <div class="pricing__boxes">
+            <div class="pricing__boxes--title">Electric Guitars</div>
+            <h2>$1,050</h2>
+            <ol>
+               <li>Seymour Duncan Custom 5 TB-14 and SSL-1 Pickups</li>
+               <li>Graph Tech TUSQ Nut and String Trees</li>
+               <li>Grover Locking Tuners</li>
+            </ol>
+         </div>
+         <div class="pricing__boxes">
+            <div class="pricing__boxes--title">SILENT guitar</div>
+            <h2>$1,148</h2>
+            <ol>
+               <li>Yamaha SRT Powered pickup system for great performance sound</li>
+               <li>Super-compact, with detachable frame for easy travel
+                  1 11/16" (43mm) nut width</li>
+               <li>Headphone jack for ultra-quiet practicing</li>
+            </ol>
+         </div>
       </section>
    </main>
    <!-- <footer>

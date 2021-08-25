@@ -22,18 +22,36 @@ a {
   text-decoration: none;
 }
 
+h2 {
+  margin-bottom: 20px;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.btn {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 3px black solid;
+  border-radius: 2px;
+  background: transparent;
+  cursor: pointer;
+}
+
 header {
   position: fixed;
+  top: 0;
   width: 100%;
-  min-height: 75px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   background-color: #FFFFFF;
+  z-index: 1;
 }
 header .header__img--logo {
-  width: auto;
   height: 75px;
 }
 header img {
@@ -42,7 +60,7 @@ header img {
   object-fit: contain;
 }
 header .header__navbar {
-  min-width: 320px;
+  width: 100%;
   font-weight: 300;
   font-size: 20px;
 }
@@ -54,6 +72,113 @@ header .header__navbar ul {
 @media (min-width: 768px) {
   header {
     flex-direction: row;
+    justify-content: space-between;
+  }
+  header .header__img--logo {
+    margin-left: 50px;
+  }
+  header .header__navbar {
+    width: 500px;
+  }
+}
+.form--mail {
+  display: flex;
+  position: relative;
+  top: 16vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+}
+.form--mail input[type=email] {
+  max-width: 275px;
+  width: 100%;
+  padding: 5px;
+}
+.form--mail input[type=submit] {
+  max-width: 150px;
+  width: 100%;
+  height: 30px;
+  margin: 15px 0;
+  border: 0;
+  background-color: #4d3377;
+  font-weight: bold;
+}
+
+main {
+  margin-top: 40px;
+}
+main #Features {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+main #Features .features__container {
+  text-align: center;
+  max-width: 650px;
+}
+main #Features .features__container .features__container--items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+main #Features .features__container .features__container--items p {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+main #Yamaha {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+main #Yamaha iframe {
+  margin-top: 50px;
+  max-width: 640px;
+  max-height: 360px;
+  width: 100%;
+}
+main #Pricing {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main #Pricing .pricing__boxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+main #Pricing .pricing__boxes--title {
+  background-color: #ddd;
+  color: black;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2rem;
+}
+main #Pricing h2 {
+  margin-top: 15px;
+}
+main #Pricing ol {
+  font-size: 1.6rem;
+  margin: 15px 0;
+}
+main #Pricing ol li {
+  padding: 5px 0;
+}
+
+@media (min-width: 768px) {
+  .form--mail {
+    top: 10vh;
   }
 }
 

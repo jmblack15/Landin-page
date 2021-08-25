@@ -1,15 +1,15 @@
 header {
    position        : fixed;
+   top             : 0;
    width           : 100%;
-   min-height      : 75px;
    display         : flex;
-   flex-wrap       : wrap;
+   flex-direction  : column;
    justify-content : space-around;
    align-items     : center;
    background-color: $white-color;
+   z-index         : 1;
 
    .header__img--logo {
-      width : auto;
       height: 75px;
    }
 
@@ -20,11 +20,12 @@ header {
    }
 
    .header__navbar {
-      min-width  : 320px;
+      width      : 100%;
       font-weight: 300;
       font-size  : 20px;
 
       ul {
+
          display        : flex;
          justify-content: space-around;
       }
@@ -34,6 +35,15 @@ header {
 
 @media (min-width: 768px) {
    header {
-      flex-direction: row;
+      flex-direction : row;
+      justify-content: space-between;
+
+      .header__img--logo {
+         margin-left: 50px;
+      }
+
+      .header__navbar {
+         width: 500px;
+      }
    }
 }

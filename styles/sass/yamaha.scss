@@ -1,0 +1,12 @@
+#Yamaha {
+   margin-top     : 50px;
+   display        : flex;
+   justify-content: center;
+
+   iframe {
+      margin-top: 50px;
+      max-width : 640px;
+      max-height: 360px;
+      width     : 100%;
+   }
+}
