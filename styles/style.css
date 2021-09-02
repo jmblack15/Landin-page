@@ -170,6 +170,10 @@ main #Pricing .pricing__boxes--title {
 main #Pricing h2 {
   margin-top: 15px;
 }
+main #Pricing img {
+  width: 330px;
+  height: 330px;
+}
 main #Pricing ol {
   font-size: 1.6rem;
   margin: 15px 0;
