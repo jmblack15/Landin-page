@@ -2,7 +2,7 @@
 
 Web page displaying a landing page with HTML and styling with CSS using the SASS preprocessor
 
-You can see [here](https://jmblack15.github.io/Formulario-encuesta/).
+You can see [here](https://jmblack15.github.io/Landing-page/).
 
 ## why this page?
 
